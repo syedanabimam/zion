@@ -25,6 +25,8 @@ gem 'puma', '~> 3.7'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
+gem 'active_model_serializers', '~> 0.10.0'
+
 group :development, :test do
   gem 'rspec-rails', '3.1.0'
   gem 'factory_girl_rails'
@@ -41,7 +43,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   # Add a comment summarizing the current schema to the top or bottom
-  gem 'annotate'  
+  gem 'annotate'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
