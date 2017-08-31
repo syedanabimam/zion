@@ -1,5 +1,6 @@
 class ResistanceShipsController < ApplicationController
   before_action :set_resistance_ship, only: [:show, :update, :destroy]
+  rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
 
   # GET /resistance_ships
   def index
@@ -36,6 +37,7 @@ class ResistanceShipsController < ApplicationController
   # DELETE /resistance_ships/1
   def destroy
     @resistance_ship.destroy
+    render json: { message: 'Resistance ship has been erased' }
   end
 
   private

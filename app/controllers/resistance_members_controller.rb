@@ -1,5 +1,6 @@
 class ResistanceMembersController < ApplicationController
   before_action :set_resistance_member, only: [:show, :update, :destroy]
+  rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
 
   # GET /resistance_members
   def index
@@ -36,6 +37,7 @@ class ResistanceMembersController < ApplicationController
   # DELETE /resistance_members/1
   def destroy
     @resistance_member.destroy
+    render json: { message: 'Resistance member is now extinct' }
   end
 
   private
@@ -46,6 +48,6 @@ class ResistanceMembersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def resistance_member_params
-      params.require(:resistance_member).permit(:name, :email, :code, :phone, :skills)
+      params.require(:resistance_member).permit(:name, :email, :code, :phone, :skills => [])
     end
 end
