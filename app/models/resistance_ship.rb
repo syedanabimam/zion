@@ -1,0 +1,2 @@
+class ResistanceShip < ApplicationRecord
+end

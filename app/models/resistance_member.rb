@@ -1,0 +1,2 @@
+class ResistanceMember < ApplicationRecord
+end
