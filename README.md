@@ -1,24 +1,7 @@
-# README
+# Zion Service
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This services serves mainly to provide endpoints for following resources:
 
-Things you may want to cover:
+* Resistance Members (CRUD)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Resistance Ships (CRUD)
