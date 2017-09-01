@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 ResistanceMember.create([{ name: 'Ronny', email: 'ronny@zion.com', code: 'RO-23234', phone: '234234234', skills: ["fighting", "running" ]}, { name: 'Johnny', email: 'Johnny@zion.com', code: 'JO-23234', phone: '2323424234', skills: ["fighting", "running"] }])
-ResistanceShip.create([{ name: 'Jebucchudnazar', code: 'NB-324243', capacity: '8' }, { name: 'Nebucchudnazar', code: 'JB-324243', capacity: '5' }])
+ResistanceShip.create([{ name: 'Jebucchudnazar', code: 'NB-324243', capacity: '8' }, { name: 'Nebucchudnazar', code: 'JB-324243', capacity: '5' }]) 
